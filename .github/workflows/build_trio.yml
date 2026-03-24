@@ -221,6 +221,7 @@ jobs:
 
       - name: Install iOS and watchOS Platforms
         run: |
+          xcodebuild -runFirstLaunch || true
           xcodebuild -downloadPlatform iOS
           xcodebuild -downloadPlatform watchOS
       
